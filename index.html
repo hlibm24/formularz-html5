@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz HTML5</title>
+</head>
+<body>
+
+    <form action="https://formspree.io/f/mzzrzden" method="POST">
+
+        <label for="user.name">Imię:</label>
+        <input type="text" name="user.name" id="user.name" ><br>
+
+        <label for="user.secondName">Nazwisko:</label>
+        <input type="text" name="user.secoundName" id="user.secondName"> <br>
+
+        <label for="e-mail">Wprowadż swojego mejla:</label>
+        <input type="email" name="user.email" id="e-mail"> <br>
+
+        <label for="number">Wprowadż numer telefonu:</label>
+        <input type="number" id="number"> <br>
+
+        <select name="city" id="#" required>
+            <option value="" selected disabled>Wybierz swoje miasto</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+
+        <p>Wybierz płeć:</p>
+        <label>Mężczyzna
+            <input type="radio" name="gender" required>
+        </label> <br>
+        <label>Kobieta
+            <input type="radio" name="gender">
+        </label> <br>
+        <label>Nie chcę wybierać
+            <input type="radio" name="gender">
+        </label> <br>
+
+        <label>Dajesz zgodę na obrobienie swoich danych osobowych
+            <input type="checkbox" name="agreed">
+        </label> <br>
+
+        <textarea name="message" style="resize: vertical;"></textarea> <br>
+
+        <input type="submit" value="Wyślij wiadmość!">
+
+    </form>
+</body>
+</html>
